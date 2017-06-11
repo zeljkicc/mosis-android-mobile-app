@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_view_event"
+    tools:context="com.elfak.mosis.sportsoutdoors.ViewEventActivity"
+    android:orientation="vertical">
+
+<TabHost android:id="@+id/tabhost"
+android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<TabWidget android:id="@android:id/tabs"
+ android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    />
+<FrameLayout android:id="@android:id/tabcontent"
+ android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="62dp">
+    <!--PUT HERE FrameLayout1 -->
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.elfak.mosis.sportsoutdoors.EventInfoFragment" android:id="@+id/tab1">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eventview_name_label"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventview_name"
+            style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            >
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eventview_number_label"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventview_number"
+            style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            >
+
+      <!--  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eventview_user_label"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventview_user"
+            style="@style/Base.TextAppearance.AppCompat.Medium"/> -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eventview_type_label"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventview_type"
+            style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eventview_datetime_label"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventview_datetime"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_marginLeft="16dp"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eventview_description_label"
+                    style="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eventview_description"
+                    style="@style/Base.TextAppearance.AppCompat.Subhead"
+                    />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:id="@+id/eventview_button"
+            style="@style/Base.TextAppearance.AppCompat"/>
+
+
+
+</LinearLayout>
+</ScrollView>
+
+
+    </FrameLayout>
+
+    <!--PUT HERE FrameLayout2 -->
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.elfak.mosis.sportsoutdoors.PlayersFragment" android:id="@+id/tab2">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eventview_list_label"
+                style="@style/TextAppearance.AppCompat.Medium"/>
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eventview_list_players"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"></ListView>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!--PUT HERE FrameLayout3 -->
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.elfak.mosis.sportsoutdoors.ChatFragment" android:id="@+id/tab3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/activity_horizontal_margin">
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_message_edittext"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_message"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical|right"
+                android:id="@+id/send_message_button"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eventview_chat_label"
+                style="@style/TextAppearance.AppCompat.Medium"/>
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eventview_list_chat"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+            </ListView>
+
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+
+    </FrameLayout>
+    </TabHost>
+    </LinearLayout>
+
+    <!-- <?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+       android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+       android:paddingRight="@dimen/activity_horizontal_margin"
+       android:paddingTop="@dimen/activity_vertical_margin"
+       android:paddingBottom="@dimen/activity_vertical_margin"
+       app:layout_behavior="@string/appbar_scrolling_view_behavior"
+       tools:showIn="@layout/activity_view_event"
+       tools:context="com.elfak.mosis.sportsoutdoors.ViewEventActivity">
+
+
+
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/eventview_name_label"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/eventview_name"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/eventview_description_label"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/eventview_description"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/eventview_number_label"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/eventview_number"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/eventview_user_label"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/eventview_user"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/eventview_type_label"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/eventview_type"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/eventview_datetime_label"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/eventview_datetime"/>
+
+           <Button
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/sign_up"
+               android:id="@+id/eventview_button" />
+
+
+
+
+
+
+
+
+
+
+
+           <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_weight="2">
+
+
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_weight="1">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/eventview_list_label"/>
+
+                   <ListView
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/eventview_list_players"></ListView>
+
+               </LinearLayout>
+
+
+
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_weight="1">
+
+
+                   <EditText
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/send_message_edittext"/>
+
+                   <Button
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/send_message"
+                       android:textStyle="bold"
+                       android:layout_gravity="center_vertical|right"
+                       android:id="@+id/send_message_button"/>
+
+
+
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/eventview_chat_label"/>
+
+                   <ListView
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/eventview_list_chat"></ListView>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+    </RelativeLayout> -->
+
+
+
+

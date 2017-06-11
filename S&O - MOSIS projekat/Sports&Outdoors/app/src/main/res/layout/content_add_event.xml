@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_add_event"
+    tools:context="com.elfak.mosis.sportsoutdoors.AddEventActivity">
+
+
+    <TabHost android:id="@+id/tabhostAdd"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <TabWidget android:id="@android:id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        />
+    <FrameLayout android:id="@android:id/tabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="62dp">
+
+        <!--PUT HERE FrameLayout2 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/tab1Add"
+            android:paddingTop="7dp">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mapAdd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true" />
+
+        </RelativeLayout>
+
+    <!--PUT HERE FrameLayout2 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/tab2Add"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+
+
+        <ScrollView android:id="@+id/login_form" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="false">
+
+            <LinearLayout android:id="@+id/email_login_form" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                    <EditText android:id="@+id/event_name_edittext" android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content" android:hint="@string/prompt_name"
+                        android:imeActionId="@+id/login"
+
+                        android:imeOptions="actionUnspecified"
+                        android:maxLines="1" android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText android:id="@+id/event_description_edittext" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:hint="@string/prompt_description"
+                        android:imeActionId="@+id/login"
+
+                        android:imeOptions="actionUnspecified"
+                          />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type: "/>
+
+                <Spinner
+                    android:id="@+id/type_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_type"
+                    android:spinnerMode="dialog"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+
+      </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Num of players: "
+        />
+
+                <Spinner
+                    android:id="@+id/number_players_spinner"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+
+
+</LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin">
+
+
+                    <TextView
+                        android:id="@+id/datetime_textview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:paddingTop="20dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="@string/textview_set_datetime"
+                        android:textAlignment="center" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/action_set_datetime"
+                        android:id="@+id/action_add_event_datetime"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical" />
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:weightSum="1"
+                    android:layout_gravity="center_horizontal">
+
+                    <Button android:id="@+id/action_add_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/action_add_event"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cancel"
+                        android:id="@+id/action_back_from_add_event"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    </FrameLayout>
+    </TabHost>
+
+
+</RelativeLayout>

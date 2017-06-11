@@ -1,0 +1,198 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+    <string name="app_name">S&amp;O</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Log in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password </string>
+    <string name="action_sign_in">Log in</string>
+
+    <!-- Strings related to register -->
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="button_register_ok">Ok</string>
+    <string name="button_register_back">Back</string>
+
+    <string name="action_new_event">New event</string>
+    <string name="action_friends_list">Friends list</string>
+    <string name="action_add_new_friend">Add new friend</string>
+    <string name="action_event_list">Event list</string>
+
+    <string name="title_activity_friends_list">FriendsListActivity</string>
+    <string name="title_activity_show_devices">ShowDevicesActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_events_list">EventsListActivity</string>
+    <string name="title_activity_add_event">AddEventActivity</string>
+
+    <string name="prompt_description">Description</string>
+    <string name="prompt_name">Name</string>
+    <string name="action_add_event">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_bluetooth">BluetoothActivity</string>
+    <string name="title_activity_device_list">DeviceListActivity</string>
+
+
+
+    //bluetooth
+    <!-- <string name="app_name">BluetoothProba</string>
+     <string name="action_settings">Settings</string>
+     <string name="title_activity_device_list">DeviceListActivityActivity</string> -->
+
+
+    <string name="button_discoverable">Make discoverable</string>
+
+
+    //type-spinner
+    <string-array name="types_array">
+        <item>Football</item>
+        <item>Basketball</item>
+        <item>Tennis</item>
+        <item>Volleyball</item>
+        <item>Handball</item>
+        <item>Swimming</item>
+       <item> <u>Tabletennis</u></item>
+
+        <item>Baseball</item>
+        <item>Beach volleyball</item>
+        <item>Billiard</item>
+        <item>Bobsleigh</item>
+        <item>Bollie</item>
+        <item>Boxing</item>
+        <item>Climbing</item>
+        <item>Cricket</item>
+        <item>Curling</item>
+        <item>Cycling</item>
+        <item>Deep sea fishing</item>
+        <item>Diving</item>
+        <item>Fishing</item>
+        <item>Fitness</item>
+        <item>Golfing</item>
+        <item>Hanggliding</item>
+        <item>Hiking</item>
+        <item>Horseriding</item>
+        <item>Hunting</item>
+        <item>Ice hockey</item>
+        <item>Ice skating</item>
+        <item>Jogging</item>
+        <item>Judo</item>
+        <item>Karate</item>
+        <item>Kayaking</item>
+        <item>Kitesurfing</item>
+        <item>Motorbike</item>
+        <item>Mountain biking</item>
+        <item>Nordic ski</item>
+        <item>Paragliding</item>
+        <item>Parasailing</item>
+        <item>Rollerblaiding</item>
+        <item>Skating</item>
+        <item>Rugby</item>
+        <item>Sailing</item>
+        <item>Scuba diving</item>
+        <item>Shotting range</item>
+        <item>Skiing</item>
+        <item>Skijumping</item>
+        <item>Sledging</item>
+        <item>Sledging summer</item>
+        <item>Snorkeling</item>
+        <item>Snowboarding</item>
+        <item>Snowmobiling</item>
+        <item>Snowshoeing</item>
+        <item>Speedriding</item>
+        <item>Spelunking</item>
+        <item>Sumo</item>
+        <item>Surfing</item>
+        <item>Taekwondo</item>
+        <item>US football</item>
+        <item>Watercraft</item>
+        <item>Waterskiing</item>
+        <item>Windsurfing</item>
+        <item>Wrestling</item>
+        <item>Yoga</item>
+
+    </string-array>
+
+    <string name="prompt_type">Type</string>
+
+    <string name="action_set_datetime">Set</string>
+    <string name="textview_set_datetime">Start date and time</string>
+    <string name="title_activity_view_event">ViewEventActivity</string>
+
+
+    <!-- eventview labels -->
+    <string name="eventview_name_label">Name:</string>
+    <string name="eventview_description_label">Description:</string>
+    <string name="eventview_number_label">Number of players:</string>
+    <string name="eventview_user_label">Created by:</string>
+    <string name="eventview_list_label">List of players:</string>
+    <string name="eventview_type_label">Type:</string>
+    <string name="eventview_datetime_label">Starts at:</string>
+    <string name="eventview_chat_label">Messages:</string>
+
+    <string name="sign_up">Sign up</string>
+    <string name="finish">Finish</string>
+
+    <string name="send_message">Send message</string>
+    <string name="title_activity_grade_players">GradePlayersActivity</string>
+    <string name="title_activity_ranking_list">RankingListActivity</string>
+
+
+    <string name="action_ranking_list">Ranking list</string>
+    <string name="title_activity_naw_draw">NawDrawActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_search">Search</string>
+    <string name="search_hint">Search events</string>
+    <string name="title_activity_searchable">SearchableActivity</string>
+    <string name="title_activity_event_view_tabs">EventViewTabsActivity</string>
+    <string name="register_button">Register</string>
+
+
+
+    <!--bluetooth-->
+    <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">not connected</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <string name="insecure_connect">Connect a device - Insecure</string>
+    <string name="discoverable">Make discoverable</string>
+    <string name="event_type_hint">Type:</string>
+    <string name="event_name_hint">Name:</string>
+    <string name="event_description_hint">Description:</string>
+    <string name="action_show_on_map">Show on map</string>
+    <string name="action_view_event">View details</string>
+    <string name="no_events_found">No events found that match the search term. Please try again.</string>
+    <string name="action_view_event_on_map">View on map</string>
+    <string name="event_location">Event location</string>
+    <string name="action_my_event_list">My event List</string>
+    <string name="sign_off">Sign off</string>
+    <string name="action_log_off">Log off</string>
+
+    <string-array name="grades_array">
+
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+
+        </string-array>
+</resources>

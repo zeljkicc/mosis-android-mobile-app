@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+
+        <item android:id="@+id/action_my_event_list" android:title="@string/action_my_event_list"
+            android:icon="@drawable/ic_sentiment_satisfied"/>
+        <item android:id="@+id/action_event_list_nav" android:title="@string/action_event_list"
+            android:icon="@drawable/ic_view_list"/>
+        <item android:id="@+id/action_new_event_nav" android:title="@string/action_new_event"
+            android:icon="@drawable/ic_fiber_new"/>
+        <item android:id="@+id/action_friends_list_nav" android:title="@string/action_friends_list"
+            android:icon="@drawable/ic_group" />
+        <item android:id="@+id/action_add_new_friend_nav" android:title="@string/action_add_new_friend"
+            android:icon="@drawable/ic_person_add"/>
+        <item android:id="@+id/action_ranking_list_nav" android:title="@string/action_ranking_list"
+            android:icon="@drawable/ic_star"/>
+
+    </group>
+
+    <item android:title="Communicate" android:id="@+id/switches">
+        <menu>
+
+            <item
+                android:id="@+id/item_switch_friends"
+                android:title="Show friends"
+                app:actionLayout="@layout/friends_switch"
+                app:showAsAction="always"
+                />
+
+            <item
+                android:id="@+id/item_switch_bluetooth"
+                android:title="Bluetooth on/off"
+                app:actionLayout="@layout/bluetooth_switch"
+                app:showAsAction="always"
+                />
+
+            <item
+                android:id="@+id/item_switch_service"
+                android:title="Notifications on/off"
+                app:actionLayout="@layout/service_switch"
+                app:showAsAction="always"
+                />
+
+
+
+
+
+
+
+
+        </menu>
+
+
+
+    </item>
+
+
+    <item android:id="@+id/action_log_off" android:title="@string/action_log_off"
+        android:icon="@drawable/ic_exit_to_app" android:state_checked="true"/>
+
+
+</menu>
+

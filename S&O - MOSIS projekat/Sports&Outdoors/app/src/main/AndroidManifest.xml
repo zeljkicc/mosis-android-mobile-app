@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.elfak.mosis.sportsoutdoors" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application android:name="MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchableActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB-x4mXlvYpwIztrfDYNQEiwXf9Wj4sMYE" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.elfak.mosis.sportsoutdoors.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".EventsListActivity"
+            android:label="@string/title_activity_events_list"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.elfak.mosis.sportsoutdoors.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddEventActivity"
+            android:label="@string/title_activity_add_event"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.elfak.mosis.sportsoutdoors.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FriendsListActivity"
+            android:label="@string/title_activity_friends_list"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.elfak.mosis.sportsoutdoors.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DeviceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/select_device"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.elfak.mosis.sportsoutdoors.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ViewEventActivity"
+            android:label="@string/title_activity_view_event"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.elfak.mosis.sportsoutdoors.MainActivity" />
+        </activity>
+        <activity
+            android:name=".GradePlayersActivity"
+            android:label="@string/title_activity_grade_players"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.elfak.mosis.sportsoutdoors.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RankingListActivity"
+            android:label="@string/title_activity_ranking_list"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.elfak.mosis.sportsoutdoors.MainActivity" />
+        </activity>
+
+        <service android:name=".NotifyService" >
+
+            <!--
+            android:enabled="true"
+            android:exported="true" >
+            -->
+        </service>
+
+        <activity
+            android:name=".SearchableActivity"
+            android:label="@string/title_activity_searchable"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <provider
+            android:name=".MySuggestionProvider"
+            android:authorities="com.elfak.mosis.sportsoutdoors.MySuggestionProvider" />
+
+        <activity android:name=".EventLocationActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:label="@string/event_location"
+            >
+
+        </activity>
+    </application>
+
+</manifest>
