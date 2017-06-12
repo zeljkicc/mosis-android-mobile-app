@@ -1,6 +1,6 @@
 ## Synopsis
 
-Android mobile app project for Mobile systems and services class. - "Sports & Outdoors" - app for creating, finding and tracking sport and outdoor events.
+Android mobile app project for Mobile systems and services subject. - "Sports & Outdoors" - app for creating, finding and tracking sport and outdoor events, developed by Jelena Ljubenović and Željko Laković.
 
 ## Technologies used
 
